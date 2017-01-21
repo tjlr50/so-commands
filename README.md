@@ -3,7 +3,7 @@
 ## Resetear password
 
 En el menú de boot presionar la tecla `e`  
-Cambiar ro por rw init=/sysroot/bin/sh
+Cambiar `ro` por `rw init=/sysroot/bin/sh`
 Presionar `ctrl+x`  
 Ejecutar los siguientes comandos
 ```
@@ -17,11 +17,10 @@ Ejecutar los siguientes comandos
 
 | Comando   | Descripción   |
 |---|---|
-| nmcli -p dev | Listar conexiones de red y estado |
+| ip addr | |
+| ip route show | |
 | ifdown ens33 | Desactivar interfaz de red |
 | ifup ens33 | Activar interfaz de red |
-| nmcli con up ens33 | |
-| nmcli con down ens33 | |
 | systemctl restart network.service | Reiniciar las interfaces de red |
 | systemctl status network.service | Obtener el estado de las interfaces de red |
 | ssh root@192.168.10.128 | Realizar una conexión remota |
@@ -35,6 +34,14 @@ Ejecutar los siguientes comandos
 | systemctl status httpd |  |
 | systemctl list-unit-files --type=service | |
 
+| Comando   | Descripción   |
+|---|---|
+| nmcli -p dev | Listar conexiones de red y estado |
+| nmcli con up ens33 | |
+| nmcli con down ens33 | |
+| ip route add 10.10.20.0/24 via 192.168.50.100 dev eth0 | |
+| ip addr add 192.168.50.5 dev eth1 | | 
+| ip addr del 192.168.50.5/24 dev eth1 | |  
 
 # Archivos configuración
 
