@@ -17,31 +17,31 @@ Ejecutar los siguientes comandos
 
 | Comando   | Descripción   |
 |---|---|
-| ip addr | |
-| ip route show | |
+| ip addr | Mostrar información de las interfaces de red |
+| ip route show | Mostrar información del gateway |
 | ifdown ens33 | Desactivar interfaz de red |
 | ifup ens33 | Activar interfaz de red |
 | systemctl restart network.service | Reiniciar las interfaces de red |
 | systemctl status network.service | Obtener el estado de las interfaces de red |
 | ssh root@192.168.10.128 | Realizar una conexión remota |
-| yum install httpd -y | |
-| firewall-cmd --get-active-zones | |
-| firewall-cmd --zone=public --add-port=80/tcp --permanent | |
-| firewall-cmd --reload | |
-| systemctl enable httpd |  |
-| systemctl is-enabled httpd | |
-| systemctl start httpd |  |
-| systemctl status httpd |  |
-| systemctl list-unit-files --type=service | |
+| yum install httpd -y | Instalar apache2 |
+| firewall-cmd --get-active-zones | Mostrar la tabla del firewall |
+| firewall-cmd --zone=public --add-port=80/tcp --permanent | Abrir el puerto 80 en el firewall |
+| firewall-cmd --reload | Recargar la tabla de firewall |
+| systemctl enable httpd | Habilitar apache2 en el arranque del sistema operativo |
+| systemctl is-enabled httpd | Consultar si apache2 esta habilitado |
+| systemctl start httpd | Iniciar el servicio de apache2 |
+| systemctl status httpd | Obtener el estado del servicio apache2 |
+| systemctl list-unit-files --type=service | Listar los servicios |
 
 | Comando   | Descripción   |
 |---|---|
 | nmcli -p dev | Listar conexiones de red y estado |
-| nmcli con up ens33 | |
-| nmcli con down ens33 | |
-| ip route add 10.10.20.0/24 via 192.168.50.100 dev eth0 | |
-| ip addr add 192.168.50.5/24 dev eth1 | | 
-| ip addr del 192.168.50.5/24 dev eth1 | |  
+| nmcli con up ens33 | Activar la interfaz ens33 |
+| nmcli con down ens33 | Desactivar la interfaz ens33 |
+| ip route add 10.10.20.0/24 via 192.168.50.100 dev eth0 | Adicionar un gateway a la interfaz |
+| ip addr add 192.168.50.5/24 dev ens33 | Asignar una ip a la interfaz ens33 | 
+| ip addr del 192.168.50.5/24 dev ens33 | Elminar una ip de la interfaz ens33 |  
 
 # Archivos configuración
 
