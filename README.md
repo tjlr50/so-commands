@@ -41,6 +41,7 @@ Ejecutar los siguientes comandos
 | nmcli con down ens33 | Desactivar la interfaz ens33 |
 | ip route add 10.10.20.0/24 via 192.168.50.100 dev eth0 | Adicionar un gateway a la interfaz |
 | ip addr add 192.168.50.5/24 dev ens33 | Asignar una ip a la interfaz ens33 | 
+| ip addr add 192.168.50.5/24 dev ens33:0 | Asignar una ip a la sub-interfaz ens33:0 | 
 | ip addr del 192.168.50.5/24 dev ens33 | Elminar una ip de la interfaz ens33 |  
 
 # Archivos configuración
