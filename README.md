@@ -26,6 +26,7 @@ Ejecutar los siguientes comandos
 | ssh root@192.168.10.128 | Realizar una conexión remota |
 | yum install httpd -y | Instalar apache2 |
 | firewall-cmd --get-active-zones | Mostrar la tabla del firewall |
+| firewall-cmd --zone=public --list-ports | Listar los puertos abiertos en la zona publica |
 | firewall-cmd --zone=public --add-port=80/tcp --permanent | Abrir el puerto 80 en el firewall |
 | firewall-cmd --reload | Recargar la tabla de firewall |
 | systemctl enable httpd | Habilitar apache2 en el arranque del sistema operativo |
