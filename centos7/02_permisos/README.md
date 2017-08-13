@@ -7,10 +7,9 @@
 | --- | root | Los siguientes comandos se ejcutan como el usuario root |
 | # cd /tmp | root | Cambie el path al directorio tmp |
 | # touch message_1.txt | root | Cree un archivo de nombre message_1.txt |
-| # ls -l message_1.txt | root | Listar las propiedades del archivo message_1.txt |
+| # ls -l message_1.txt | root | Observe los permisos del archivo message_1.txt |
 | # vi message_1.txt | root | Edite el archivo message_1.txt |
 | # cat filename | root | Ver el contenido del archivo message_1.txt |
-| - | root | Anote los permisos por defecto del archivo message_1.txt |
 | --- | redes | Los siguientes comandos se ejcutan como el usuario redes |
 | $ cd /tmp | redes | Cambie el path al directorio tmp |
 | $ cat filename | root | Intente ver el contenido del archivo message_1.txt |
@@ -31,8 +30,8 @@
 | # mv mensaje.txt mensaje_origen.txt | root | Cambie el nombre del archivo |
 | # scp mensaje_origen.txt redes@192.168.104.21:/tmp/mensaje_destino.txt | root | Enviar el archivo mensaje.txt a una maquina remota, el archivo debe tener permisos de lectura para poder ser enviado |
 | # ssh redes@192.168.104.21 | root | Acceda a la máquina remota |
-| $ cat /tmp/mensaje_destino.txt | redes | Verifique el contenido del archivo |
-| $ ls -l /tmp/mensaje_destino.txt | redes | Observe los permisos del archivo |
+| $ cat /tmp/mensaje_destino.txt | redes | Verifique el contenido del archivo mensaje_destino.txt |
+| $ ls -l /tmp/mensaje_destino.txt | redes | Observe los permisos del archivo mensaje_destino.txt |
 
 ## Comandos alternos
 
