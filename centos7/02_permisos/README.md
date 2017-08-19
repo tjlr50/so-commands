@@ -32,6 +32,12 @@
 | # ssh redes@192.168.104.21 | root | Acceda a la máquina remota |
 | $ cat /tmp/mensaje_destino.txt | redes | Verifique el contenido del archivo mensaje_destino.txt |
 | $ ls -l /tmp/mensaje_destino.txt | redes | Observe los permisos del archivo mensaje_destino.txt |
+| $ exit | redes | Cierre su sesión en la máquina remota |
+| $ PS1='$>' | redes | Cambia el prompt |
+| $ whoami | ? | Visualize el nombre del usuario en la sesión actual |
+| $ history | redes | Imprima el historial de comandos ingresados por el usuario redes |
+| --- | root | Los siguientes comandos se ejcutan como el usuario root |
+| # who | root | Determine que usuarios estan conectados al sistema operativo |
 
 ## Comandos alternos
 
