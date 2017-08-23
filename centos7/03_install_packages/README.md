@@ -22,8 +22,9 @@ En el fork crear una rama student_id/add-solutions donde student_id es su códig
 | $ exit | operativos | Salga de la sesión del usuario operativos |
 | # cat /var/spool/mail/root | operativos | Verifique que el incidente ha sido reportado |
 | # visudo | root | Ejecute el comando visudo |
-| ESC, :set number | root | Visualice los números de línea del archivo |
-| :root | root | Adicionar la linea: operativos ALL=(ALL) ALL |
+| Presione la tecla ESC, :set number | root | Visualice los números de línea del archivo |
+| :91 | root | Vaya a la línea 91 |
+| Presione la tecla o | root | Adicionar la linea: operativos ALL=(ALL) ALL |
 | :x | root | Salir de visudo |
 | # su operativos | root | Inicie sesión como el usuario operativos |
 | $ sudo yum install git -y | operativos | Instale el cliente de git |
